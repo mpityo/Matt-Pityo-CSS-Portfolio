@@ -1,28 +1,34 @@
 :root {
 	--primary-color: white;
-	--secondary-color: #89CFF0; /* baby blue */
+	--secondary-color: #00CC66;
+	/*--secondary-color: #89CFF0; baby blue */
 	--tirtiary-color: #1f1f24; /* dark blue */
 }
 * {
-	background-color: var(--tirtiary-color);
 	color: var(--primary-color);
 	font-family: Helvetica, Verdana, sans-serif;
 }
-
+body {
+	background-color: var(--tirtiary-color);
+}
+section {
+	margin: 50px 0 20px 0;
+}
 .side-bar {
+	width: 25%;
+	/*background: var(--secondary-color);*/
+	background-image: linear-gradient(to right, rgba(0,204,102,0), rgba(0,204,102,1));
 	display: flex;
-	flex-wrap: right;
-	justify-content: start;
-	position: relative;
-	margin: 100px 0;
-	background: var(--secondary-color);
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
 }
 .side-bar h2 {
 	writing-mode: vertical-lr;
-	background: var(--secondary-color);
+	background: rbga(0,0,0,0);
 	color: var(--tirtiary-color);
-	text-align: right;
-	font-size: 66px;
+	text-align: center;
+	font-size: 6.0vw;
 }
 
 /* HEADER begin */
@@ -34,11 +40,12 @@ header {
 	justify-content: space-between;
 	top: 0;
 	z-index: 9999;
+	background: rgba(31,31,37,.7);
 }
 header h1 {
 	color: var(--primary-color);
 	font-style: italic;
-	font-size: 2.99vw;
+	font-size: 2rem;
 }
 header nav {
 	margin: 6px 0;
@@ -55,25 +62,34 @@ header nav ul {
 }
 header nav ul li {
 	padding: 10px 25px;
-	font-size: 2.00vw;
+	font-size: 1.5rem;
 	font-weight: lighter;
 }
 header nav ul li a:hover {
-	border-bottom: 1px solid var(--secondary-color);
-	font-weight: bold;
+	color: var(--secondary-color);
 }
 /* HEADER end */
 
 /* ABOUT ME begin */
 .about-me {
 	display: flex;
-	justify-content: start;
+	width: 100%;
+}
+.about-me-content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2.0vw;
+	padding-left: 25px;
 }
 .about-me-bio {
-	flex: 1 10%;
+	flex: 1;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.about-me-pic {
-	flex: 0 10%;
+.about-me-bio h3 {
+	font-size: 3rem;
+	margin: 0 0 20px 0;
 }
 .about-me-pic img {
 	width: 270px;
@@ -86,7 +102,21 @@ header nav ul li a:hover {
 /* PROJECTS start */
 .projects {
 	display: flex;
-
+	width: 100%;
+}
+.projects-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	flex: 1;
+}
+.projects-content div {
+	width: 200px;
+	background-image: linear-gradient(to right, rgba(44, 46, 45, 0), rgba(44, 46, 45,1));
+	border-radius: 10%;
+	border: 1px solid var(--secondary-color);
+	flex-direction: column;
+    justify-content: center;
 }
 /* PROJECTS end */
 
