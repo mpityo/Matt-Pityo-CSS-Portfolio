@@ -117,7 +117,7 @@ header nav ul li a:hover {
 .projects-content {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: center;
 }
 .projects-content div {
 	width: 400px;
@@ -127,7 +127,7 @@ header nav ul li a:hover {
 	border: 1px solid var(--secondary-color);
 	flex-direction: column;
     justify-content: center;
-	margin-top: 10px;
+	margin: 20px;
 }
 /* PROJECTS end */
 
