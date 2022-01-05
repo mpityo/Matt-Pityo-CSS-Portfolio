@@ -12,7 +12,7 @@ body {
 	background-color: var(--tirtiary-color);
 }
 section {
-	margin: 50px 0 20px 0;
+	margin: 100px 0 0 0;
 }
 .side-bar {
 	width: 25%;
@@ -22,13 +22,21 @@ section {
     flex-wrap: wrap;
     align-content: center;
     justify-content: flex-end;
+	max-width: 185px;
 }
 .side-bar h2 {
-	writing-mode: vertical-lr;
+	writing-mode: vertical-rl;
 	background: rbga(0,0,0,0);
 	color: var(--tirtiary-color);
 	text-align: center;
-	font-size: 6.0vw;
+	font-size: 66px;
+}
+
+.about-me,
+.projects,
+.connect {
+	display: flex;
+	width: 100%;
 }
 
 /* HEADER begin */
@@ -65,6 +73,10 @@ header nav ul li {
 	font-size: 1.5rem;
 	font-weight: lighter;
 }
+header nav ul li:nth-child(2) {
+	border-left: 1px solid var(--primary-color);
+	border-right: 1px solid var(--primary-color);
+}
 header nav ul li a:hover {
 	color: var(--secondary-color);
 }
@@ -72,8 +84,7 @@ header nav ul li a:hover {
 
 /* ABOUT ME begin */
 .about-me {
-	display: flex;
-	width: 100%;
+	margin-top: 0;
 }
 .about-me-content {
 	display: flex;
@@ -91,6 +102,9 @@ header nav ul li a:hover {
 	font-size: 3rem;
 	margin: 0 0 20px 0;
 }
+.about-me-bio p {
+	font-size: 1.5rem;
+}
 .about-me-pic img {
 	width: 270px;
 	height: 400px;
@@ -100,25 +114,43 @@ header nav ul li a:hover {
 /* ABOUT ME end */
 
 /* PROJECTS start */
-.projects {
-	display: flex;
-	width: 100%;
-}
 .projects-content {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-	flex: 1;
 }
 .projects-content div {
-	width: 200px;
+	width: 400px;
+	height: 500px;
 	background-image: linear-gradient(to right, rgba(44, 46, 45, 0), rgba(44, 46, 45,1));
 	border-radius: 10%;
 	border: 1px solid var(--secondary-color);
 	flex-direction: column;
     justify-content: center;
+	margin-top: 10px;
 }
 /* PROJECTS end */
+
+/* CONNECT start */
+.connect-content {
+	padding-left: 25px;
+}
+.connect-content h3 {
+	font-size: 3rem;
+	margin: 50px auto;
+}
+.connect-content p {
+	font-size: 2rem;
+}
+.connect-content p a {
+	font-size: 2rem;
+}
+.connect-content p a:hover {
+	color: var(--secondary-color);
+	font-weight: bold;
+}
+
+/* CONNECT end */
 
 @media screen and (max-width: 980px) {
 	header h1 {
