@@ -3,7 +3,7 @@
 	--connect-color: #13c56cd7; /* green */
 	--secondary-color: #1f1f24; /* dark grey */
 	--aboutme-color: #EE7879;
-	--projects-color: #89CFF0;
+	--projects-color: #2390d8;
 	--transparent-color: #00000000;
 
 }
@@ -164,7 +164,7 @@ header nav ul li:nth-child(2) {
 .projects-content .slide-up {
 	height: 150px;
 	position: absolute;
-	background-color: rgba(0,0,0,.7);
+	background-color: #1f1f24D7;
 	color: #ffffff;
 	font-size: 1.75rem;
 	border: none;
