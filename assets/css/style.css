@@ -117,7 +117,7 @@ header nav ul li:nth-child(2) {
 	color: var(--secondary-color);
 }
 .about-me-bio h3 {
-	font-size: 3rem;
+	font-size: 3vw;
 	margin-top: 5px;
 	margin-bottom: 20px;
 }
