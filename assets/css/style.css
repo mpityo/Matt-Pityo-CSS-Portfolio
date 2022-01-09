@@ -156,17 +156,25 @@ header nav ul li:nth-child(2) {
 	height: 400px;
 	border-radius: 10px;
 }
-.projects-content .project-container .img-a {
+.projects-content .project-container a {
 	position: absolute;
 	margin-top: 0;
 	width: 300px;
-	height: 250px;
+	height: 400px;
 	background-color: var(--transparent-color);
-	z-index: 1;
+	transition: all .3s ease-out;
 }
-.projects-content .project-container:hover .img-a {
-	background-color: #2390d8D7;
+.projects-content .project-container:hover {
 	cursor: pointer;
+}
+.projects-content .project-container .img-run:hover {
+	background-color: #d0d30e73;
+}
+.projects-content .project-container:hover .img-gladiator {
+	background-color: #6094b373;
+}
+.projects-content .project-container:hover .img-password {
+	background-color: #d1404073;
 }
 /*** SLIDE UP start */
 .projects-content .slide-up {
@@ -187,7 +195,7 @@ header nav ul li:nth-child(2) {
 	text-decoration: none;
 	color: var(--transparent-color);
 }
-/** bottom div slides up to the top on img hover or slide up div hover */
+/** bottom div slides up to the top on img hover or slide up div hover 
 .projects-content .project-container .slide-up:hover {
     height: 400px;
 	margin-top: 0;
@@ -195,6 +203,7 @@ header nav ul li:nth-child(2) {
 .projects-content .project-container .slide-up:hover a {
 	color: var(--primary-color);
 }
+*/
 /*** SLIDE UP end */
 /* PROJECTS end */
 
