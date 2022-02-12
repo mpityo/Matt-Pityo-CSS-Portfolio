@@ -167,6 +167,9 @@ header nav ul li:nth-child(2) {
 .projects-content .project-container:hover {
 	cursor: pointer;
 }
+.projects-content .project-container .img-cuisine:hover {
+	background-color: #1e86db73;
+}
 .projects-content .project-container .img-planner:hover {
 	background-color: #28c23c73;
 }
@@ -204,7 +207,7 @@ header nav ul li:nth-child(2) {
 	text-decoration: none;
 	color: var(--transparent-color);
 }
-/** bottom div slides up to the top on img hover or slide up div hover 
+/** bottom div slides up to the top on img hover or slide up div hover */
 .projects-content .project-container .slide-up:hover {
     height: 400px;
 	margin-top: 0;
@@ -212,7 +215,7 @@ header nav ul li:nth-child(2) {
 .projects-content .project-container .slide-up:hover a {
 	color: var(--primary-color);
 }
-*/
+
 /*** SLIDE UP end */
 /* PROJECTS end */
 
