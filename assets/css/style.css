@@ -167,6 +167,9 @@ header nav ul li:nth-child(2) {
 .projects-content .project-container:hover {
 	cursor: pointer;
 }
+.projects-content .project-container .img-movie:hover {
+	background-color: #11f4839c;
+}
 .projects-content .project-container .img-cuisine:hover {
 	background-color: #1e86db73;
 }
